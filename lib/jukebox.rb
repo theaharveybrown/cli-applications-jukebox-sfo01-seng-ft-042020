@@ -42,7 +42,7 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-def run(command)
+def run(songs)
   puts "command #{command}"
 end 
 
