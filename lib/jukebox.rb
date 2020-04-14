@@ -20,7 +20,7 @@ def help
   puts "- exit : exits this program"
 end 
 
-def list 
+def list(songs) 
   index = 1
   songs.each do |song|
     puts "#{index}. #{song}"
