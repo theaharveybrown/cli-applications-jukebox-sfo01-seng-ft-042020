@@ -31,7 +31,9 @@ def play(songs)
   if user_song.is_a?(Integer) && (1..9).include?(user_song)
     puts "Playing #{songs[user_song-1]}"
   else 
-    puts "Invalid input, please try again"
+    input_type = user_song.is_a?(Integer)
+    in_range = (1..9).include?(user_song)
+    puts "Input: #{input_type} range: #{in_range}"
   end
 end 
 
