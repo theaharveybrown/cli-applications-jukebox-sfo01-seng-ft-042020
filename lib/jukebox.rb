@@ -31,10 +31,10 @@ def play(songs)
   if (1..9).include?(user_song.to_i)
     user_song = user_song.to_i
     puts "Playing #{songs[user_song - 1]}"
+  elsif songs.include?(user_song)
+    puts "Playing #{user_song}"
   else 
-    input_type = user_song.is_a?(Integer)
-    in_range = (1..9).include?(user_song)
-    puts "Input: #{input_type} range: #{in_range}"
+    puts "Invalid song"
   end
 end 
 
