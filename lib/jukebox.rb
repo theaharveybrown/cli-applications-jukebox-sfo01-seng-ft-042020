@@ -28,4 +28,6 @@ def list(songs)
   end
 end 
 
-list(songs)
+def play(songs)
+  puts ""
+end 
