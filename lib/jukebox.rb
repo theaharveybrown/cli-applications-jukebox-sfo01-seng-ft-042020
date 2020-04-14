@@ -21,6 +21,7 @@ def help
 end 
 
 def list(songs) 
+  hash = 
   songs.each_with_index { 
     |val,index| puts "index: #{index} for #{val}" if val < 30}
 end 
