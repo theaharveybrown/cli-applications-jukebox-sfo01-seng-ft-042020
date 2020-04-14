@@ -35,4 +35,4 @@ def play(songs)
   end
 end 
 
-list(songs)
+play(songs)
