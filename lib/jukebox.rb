@@ -21,11 +21,8 @@ def help
 end 
 
 def list(songs) 
-  index = 1
-  songs.each do |song|
-    puts "#{index}. #{song}"
-    index += 1 
-  end
+  songs.each_with_index { 
+    |val,index| puts "index: #{index} for #{val}" if val < 30}
 end 
 
 def play(songs)
