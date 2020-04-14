@@ -42,7 +42,8 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-def run 
+def run(command)
+  puts "command #{command}"
 end 
 
 
