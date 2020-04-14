@@ -28,7 +28,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_song = gets.strip
-  if user_song.is_a?(Integer) && (1..9).include?(user_song)
+  if (1..9).include?(user_song.to_i)
     puts "Playing #{songs[user_song-1]}"
   else 
     input_type = user_song.is_a?(Integer)
